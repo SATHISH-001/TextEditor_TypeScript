@@ -4,7 +4,6 @@ import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import "draft-js/dist/Draft.css";
 import draftToHtml from "draftjs-to-html";
-// import { BlockPicker } from 'react-color';
 
 
 const MyEditor: React.FC = () => {
@@ -13,7 +12,6 @@ const MyEditor: React.FC = () => {
     );
 
     const onEditorStateChange = (newEditorState: EditorState) => {
-        console.log(newEditorState);
         setEditorState(newEditorState);
     };
 
